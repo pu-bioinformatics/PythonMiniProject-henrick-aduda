@@ -1,4 +1,4 @@
-#!/home/henrick/anaconda3/bin/python                  
+#!/bin/python                  
 
  
 import os
