@@ -1,4 +1,4 @@
-#!/home/henrick/anaconda3/bin/python
+#!/home/henrick/anaconda3/bin/python                  
 
  
 import os
@@ -9,7 +9,7 @@ def menu_func():
     Doctring:
     Prints the menu display of the python Mini-project. 
     """
-    string="None"
+    global fileName
     #This function displays the input using strings . The length of the * characters are 80 horizontally (one end to the other ) and vertically the stars add up to 
     #14 characters. I used the print in built in function to display the menu. The function also takes the input of the user and saves it in a variable(opt). The opt
     #variable is then returned as the output of the function.
@@ -26,7 +26,7 @@ def menu_func():
         *     (5) Export PDB File                  (X)                                 *
         *     (6) Exit                             (Q)                                 *
         *                                                                              *
-        *                                                       Current PDB: %s        *
+        *                                                Current PDB: %s *
         ********************************************************************************""" % fileName)
     opt= input(":")
     if opt.lower()=="o" or opt.upper()=="O":
@@ -59,7 +59,6 @@ def file_check():
         inputFile= open(fileName, 'r')
         inputFile.read()
         print("The %s" % fileName, "has been succesfully loaded." ) 
-        menu_func()
     else:
         print("File not found")
    
