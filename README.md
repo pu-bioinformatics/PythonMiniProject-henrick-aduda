@@ -13,7 +13,9 @@ This folder contains the python script for the Python MiniProject.The script is 
 ##Data
 
 Contains the pdb file 
+
 ##Python_Miniproject_Notebook
+
 Contains the python jupyter notebook file : contains the functions used in the python script.
 
 ## Credits
